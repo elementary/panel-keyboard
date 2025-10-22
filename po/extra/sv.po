@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-17 20:32+0000\n"
-"PO-Revision-Date: 2025-10-22 05:31+0000\n"
+"PO-Revision-Date: 2025-10-22 09:32+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/wingpanel/"
 "indicator-keyboard-extra/sv/>\n"
@@ -48,7 +48,7 @@ msgstr ""
 
 #: data/keyboard.metainfo.xml.in:56
 msgid "Show tooltip on hover"
-msgstr ""
+msgstr "Visa verktygstips vid hovring"
 
 #: data/keyboard.metainfo.xml.in:64
 msgid "Optionally show CapsLock and Numlock indicators"
