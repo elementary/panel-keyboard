@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-17 20:32+0000\n"
-"PO-Revision-Date: 2025-10-22 09:32+0000\n"
+"PO-Revision-Date: 2025-10-22 09:58+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/wingpanel/"
 "indicator-keyboard-extra/sv/>\n"
@@ -21,11 +21,11 @@ msgstr ""
 
 #: data/keyboard.metainfo.xml.in:11
 msgid "Keyboard Indicator"
-msgstr ""
+msgstr "Indikator för tangentbord"
 
 #: data/keyboard.metainfo.xml.in:12
 msgid "The keyboard indicator"
-msgstr ""
+msgstr "Tangentbordsindikatorn"
 
 #: data/keyboard.metainfo.xml.in:27
 msgid "elementary, Inc."
@@ -44,7 +44,7 @@ msgstr "Uppdaterade översättningar"
 
 #: data/keyboard.metainfo.xml.in:55
 msgid "Show IBus input methods"
-msgstr ""
+msgstr "Visa metoder för IBus-ingång"
 
 #: data/keyboard.metainfo.xml.in:56
 msgid "Show tooltip on hover"
@@ -52,4 +52,4 @@ msgstr "Visa verktygstips vid hovring"
 
 #: data/keyboard.metainfo.xml.in:64
 msgid "Optionally show CapsLock and Numlock indicators"
-msgstr ""
+msgstr "Visa CapsLock- och Numlock-indikatorer (valfritt)"
