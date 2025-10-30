@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-17 20:32+0000\n"
-"PO-Revision-Date: 2025-10-22 05:31+0000\n"
+"PO-Revision-Date: 2025-10-31 11:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/wingpanel/"
 "keyboard/sv/>\n"
@@ -41,7 +41,7 @@ msgstr "Visa tangentbordslayout"
 
 #: src/PopoverWidget.vala:105
 msgid "Keyboard Settings…"
-msgstr "Tangentbordsinställningar…"
+msgstr "Inställningar för tangentbord…"
 
 #: src/PopoverWidget.vala:380
 msgid "Default keyboard layout"
