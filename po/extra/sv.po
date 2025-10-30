@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-17 20:32+0000\n"
-"PO-Revision-Date: 2025-10-22 09:58+0000\n"
+"PO-Revision-Date: 2025-10-31 11:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/wingpanel/"
 "indicator-keyboard-extra/sv/>\n"
@@ -44,7 +44,7 @@ msgstr "Uppdaterade översättningar"
 
 #: data/keyboard.metainfo.xml.in:55
 msgid "Show IBus input methods"
-msgstr "Visa metoder för IBus-ingång"
+msgstr "Visa metoder för IBus-inmatning"
 
 #: data/keyboard.metainfo.xml.in:56
 msgid "Show tooltip on hover"
