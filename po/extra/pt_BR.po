@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-17 20:32+0000\n"
-"PO-Revision-Date: 2024-08-07 18:16+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
+"PO-Revision-Date: 2025-07-27 22:55+0000\n"
+"Last-Translator: Guilherme Faura <guilhermefaura@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://l10n.elementaryos.org/projects/"
 "wingpanel/indicator-keyboard-extra/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: data/keyboard.metainfo.xml.in:11
 msgid "Keyboard Indicator"
@@ -44,15 +44,15 @@ msgstr "Traduções atualizadas"
 
 #: data/keyboard.metainfo.xml.in:55
 msgid "Show IBus input methods"
-msgstr ""
+msgstr "Mostrar os métodos de entrada IBus"
 
 #: data/keyboard.metainfo.xml.in:56
 msgid "Show tooltip on hover"
-msgstr ""
+msgstr "Exibir dica de ferramenta ao passar o mouse"
 
 #: data/keyboard.metainfo.xml.in:64
 msgid "Optionally show CapsLock and Numlock indicators"
-msgstr ""
+msgstr "Opcionalmente, mostrar os indicadores CapsLock e Numlock"
 
 #~ msgid "Fixed issue with text color"
 #~ msgstr "Corrigido problema com a cor do texto"

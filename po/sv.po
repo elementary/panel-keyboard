@@ -3,66 +3,59 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-17 20:32+0000\n"
-"PO-Revision-Date: 2018-10-23 19:04+0000\n"
-"Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
-"Language-Team: Swedish <https://weblate.elementary.io/projects/wingpanel/"
-"wingpanel-indicator-keyboard/sv/>\n"
+"PO-Revision-Date: 2025-10-31 11:55+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <https://l10n.elementaryos.org/projects/wingpanel/"
+"keyboard/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:46+0000\n"
 
 #: src/Indicator.vala:35
 msgid "Num Lock is on"
-msgstr ""
+msgstr "Num Lock är på"
 
 #: src/Indicator.vala:43
 msgid "Caps Lock is on"
-msgstr ""
+msgstr "Caps Lock är på"
 
 #: src/Indicator.vala:149
 msgid "Middle-click to switch to the next layout"
-msgstr ""
+msgstr "Mittenklicka för att växla till nästa layout"
 
 #: src/PopoverWidget.vala:57
-#, fuzzy
-#| msgid "Show keyboard layout"
 msgid "Keyboard Layout"
-msgstr "Visa tangentbordsuppsättning"
+msgstr "Tangentbordslayout"
 
 #: src/PopoverWidget.vala:61
 msgid "Input Method"
-msgstr ""
+msgstr "Inmatningsmetod"
 
 #: src/PopoverWidget.vala:92
-#, fuzzy
-#| msgid "Show keyboard layout"
 msgid "Show Keyboard Layout"
-msgstr "Visa tangentbordsuppsättning"
+msgstr "Visa tangentbordslayout"
 
 #: src/PopoverWidget.vala:105
 msgid "Keyboard Settings…"
-msgstr "Tangentbordsinställningar…"
+msgstr "Inställningar för tangentbord…"
 
 #: src/PopoverWidget.vala:380
-#, fuzzy
-#| msgid "Show keyboard layout"
 msgid "Default keyboard layout"
-msgstr "Visa tangentbordsuppsättning"
+msgstr "Standardlayout för tangentbord"
 
 #: src/PopoverWidget.vala:386
-#, fuzzy, c-format
-#| msgid "Show keyboard layout"
+#, c-format
 msgid "Keyboard Layout: %s"
-msgstr "Visa tangentbordsuppsättning"
+msgstr "Tangentbordslayout: %s"
 
 #: src/PopoverWidget.vala:393
 #, c-format
 msgid "Input Method: %s"
-msgstr ""
+msgstr "Inmatningsmetod: %s"
 
 #~ msgid "Keyboard"
 #~ msgstr "Tangentbord"
