@@ -3,44 +3,40 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-17 20:32+0000\n"
-"PO-Revision-Date: 2018-02-09 19:29+0000\n"
+"PO-Revision-Date: 2026-01-19 15:55+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
-"Language-Team: Slovenian <https://weblate.elementary.io/projects/wingpanel/"
-"wingpanel-indicator-keyboard/sl/>\n"
+"Language-Team: Slovenian <https://l10n.elementaryos.org/projects/wingpanel/"
+"keyboard/sl/>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:46+0000\n"
 
 #: src/Indicator.vala:35
 msgid "Num Lock is on"
-msgstr ""
+msgstr "Num Lock je vklopljen"
 
 #: src/Indicator.vala:43
 msgid "Caps Lock is on"
-msgstr ""
+msgstr "Caps Lock je vklopljen"
 
 #: src/Indicator.vala:149
 msgid "Middle-click to switch to the next layout"
-msgstr ""
+msgstr "Srednji klik za preklop na naslednji razpored"
 
 #: src/PopoverWidget.vala:57
-#, fuzzy
-#| msgid "Show keyboard layout"
 msgid "Keyboard Layout"
-msgstr "Prikaži razpored tipk"
+msgstr "Razpored tipk"
 
 #: src/PopoverWidget.vala:61
 msgid "Input Method"
-msgstr ""
+msgstr "Način vnosa"
 
 #: src/PopoverWidget.vala:92
-#, fuzzy
-#| msgid "Show keyboard layout"
 msgid "Show Keyboard Layout"
 msgstr "Prikaži razpored tipk"
 
@@ -49,21 +45,18 @@ msgid "Keyboard Settings…"
 msgstr "Nastavitve tipkovnice…"
 
 #: src/PopoverWidget.vala:380
-#, fuzzy
-#| msgid "Show keyboard layout"
 msgid "Default keyboard layout"
-msgstr "Prikaži razpored tipk"
+msgstr "Privzeti razpored tipk"
 
 #: src/PopoverWidget.vala:386
-#, fuzzy, c-format
-#| msgid "Show keyboard layout"
+#, c-format
 msgid "Keyboard Layout: %s"
-msgstr "Prikaži razpored tipk"
+msgstr "Razpored tipk: %s"
 
 #: src/PopoverWidget.vala:393
 #, c-format
 msgid "Input Method: %s"
-msgstr ""
+msgstr "Način vnosa: %s"
 
 #~ msgid "Keyboard"
 #~ msgstr "Tipkovnica"
