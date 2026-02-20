@@ -11,7 +11,7 @@ You'll need the following dependencies:
 * libibus-1.0-dev
 * libglib2.0-dev
 * libgranite-7-dev >= 7.6.0
-* libwingpanel-8-dev
+* libwingpanel-9-dev
 * libxml2-dev
 * meson (>= 0.58.0)
 * valac
