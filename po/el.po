@@ -3,60 +3,59 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-17 20:32+0000\n"
-"PO-Revision-Date: 2017-02-07 12:12+0000\n"
-"Last-Translator: Christos Iatropoulos <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-06-29 09:56+0000\n"
+"Last-Translator: Jim Spentzos <jimspentzos2000@gmail.com>\n"
+"Language-Team: Greek <https://l10n.elementaryos.org/projects/wingpanel/"
+"keyboard/el/>\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2026.5\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:46+0000\n"
-"X-Generator: Launchpad (build 18335)\n"
 
 #: src/Indicator.vala:35
 msgid "Num Lock is on"
-msgstr ""
+msgstr "Το Num Lock είναι ενεργό"
 
 #: src/Indicator.vala:43
 msgid "Caps Lock is on"
-msgstr ""
+msgstr "Το Caps Lock είναι ενεργό"
 
 #: src/Indicator.vala:149
 msgid "Middle-click to switch to the next layout"
-msgstr ""
+msgstr "Μεσαίο κλικ για εναλλαγή στην επόμενη διάταξη"
 
 #: src/PopoverWidget.vala:57
-#, fuzzy
 msgid "Keyboard Layout"
-msgstr "Ο δείκτης διατάξεων πληκτρολογίου"
+msgstr "Διάταξη πληκτρολογίου"
 
 #: src/PopoverWidget.vala:61
 msgid "Input Method"
-msgstr ""
+msgstr "Μέθοδος εισόδου"
 
 #: src/PopoverWidget.vala:92
-#, fuzzy
 msgid "Show Keyboard Layout"
-msgstr "Ο δείκτης διατάξεων πληκτρολογίου"
+msgstr "Εμφάνιση διάταξης πληκτρολογίου"
 
 #: src/PopoverWidget.vala:105
 msgid "Keyboard Settings…"
-msgstr "Ρυθμίσεις πληκτρολογίου..."
+msgstr "Ρυθμίσεις πληκτρολογίου…"
 
 #: src/PopoverWidget.vala:380
-#, fuzzy
 msgid "Default keyboard layout"
-msgstr "Ο δείκτης διατάξεων πληκτρολογίου"
+msgstr "Προεπιλεγμένη διάταξη πληκτρολογίου"
 
 #: src/PopoverWidget.vala:386
-#, fuzzy, c-format
+#, c-format
 msgid "Keyboard Layout: %s"
-msgstr "Ο δείκτης διατάξεων πληκτρολογίου"
+msgstr "Διάταξη πληκτρολογίου: %s"
 
 #: src/PopoverWidget.vala:393
 #, c-format
 msgid "Input Method: %s"
-msgstr ""
+msgstr "Μέθοδος εισόδου: %s"
 
 #~ msgid "Keyboard"
 #~ msgstr "Πληκτρολόγιο"
