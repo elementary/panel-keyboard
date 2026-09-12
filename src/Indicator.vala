@@ -4,7 +4,7 @@
 */
 
 public class Keyboard.Indicator : Wingpanel.Indicator {
-    public Wingpanel.IndicatorManager.ServerType server_type { get; construct; }
+    public Wingpanel.ServerType server_type { get; construct; }
 
     private Gdk.Device device;
     private GLib.Settings settings;
@@ -15,7 +15,7 @@ public class Keyboard.Indicator : Wingpanel.Indicator {
     private Gtk.Label layouts_icon;
     private Gtk.Revealer layouts_revealer;
 
-    public Indicator (Wingpanel.IndicatorManager.ServerType server_type) {
+    public Indicator (Wingpanel.ServerType server_type) {
         GLib.Intl.bindtextdomain (Constants.GETTEXT_PACKAGE, Constants.LOCALEDIR);
         GLib.Intl.bind_textdomain_codeset (Constants.GETTEXT_PACKAGE, "UTF-8");
 
@@ -152,7 +152,7 @@ public class Keyboard.Indicator : Wingpanel.Indicator {
     }
 }
 
-public Wingpanel.Indicator? get_indicator (Module module, Wingpanel.IndicatorManager.ServerType server_type) {
+public Wingpanel.Indicator? get_indicator (Module module, Wingpanel.ServerType server_type) {
     debug ("Activating Keyboard Indicator");
     var indicator = new Keyboard.Indicator (server_type);
     return indicator;
