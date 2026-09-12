@@ -26,7 +26,7 @@ public class Keyboard.Widgets.PopoverWidget : Gtk.Box {
 
     public signal void updated ();
 
-    public Wingpanel.IndicatorManager.ServerType server_type { get; construct; }
+    public Wingpanel.ServerType server_type { get; construct; }
 
     private GLib.Settings settings;
 #if IBUS_1_5_19
@@ -42,7 +42,7 @@ public class Keyboard.Widgets.PopoverWidget : Gtk.Box {
 
     private IBus.Bus bus;
 
-    public PopoverWidget (Wingpanel.IndicatorManager.ServerType server_type) {
+    public PopoverWidget (Wingpanel.ServerType server_type) {
         Object (server_type: server_type);
     }
 
