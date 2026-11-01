@@ -6,7 +6,6 @@
 public class Keyboard.Indicator : Wingpanel.Indicator {
     public Wingpanel.ServerType server_type { get; construct; }
 
-    private Gdk.Device device;
     private GLib.Settings settings;
     private Gtk.Box indicator_box;
     private Gtk.Revealer numlock_revealer;
@@ -14,6 +13,7 @@ public class Keyboard.Indicator : Wingpanel.Indicator {
     private Keyboard.Widgets.PopoverWidget popover_widget;
     private Gtk.Label layouts_icon;
     private Gtk.Revealer layouts_revealer;
+    private DesktopIntegration desktop_integration;
 
     public Indicator (Wingpanel.ServerType server_type) {
         GLib.Intl.bindtextdomain (Constants.GETTEXT_PACKAGE, Constants.LOCALEDIR);
@@ -23,6 +23,16 @@ public class Keyboard.Indicator : Wingpanel.Indicator {
             code_name: Wingpanel.Indicator.KEYBOARD,
             server_type: server_type
         );
+    }
+
+    construct {
+        try {
+            desktop_integration = Bus.get_proxy_sync (BusType.SESSION , "org.pantheon.gala", "/org/pantheon/gala/DesktopInterface");
+            desktop_integration.caps_lock_state_changed.connect (() => update_visibility.begin ());
+            desktop_integration.num_lock_state_changed.connect (() => update_visibility.begin ());
+        } catch (Error e) {
+            warning ("Couldn't connect to DesktopIntegration interface: %s", e.message);
+        }
     }
 
     public override Gtk.Widget get_display_widget () {
@@ -76,14 +86,8 @@ public class Keyboard.Indicator : Wingpanel.Indicator {
 
             settings = new GLib.Settings ("io.elementary.wingpanel.keyboard");
 
-            device = Gdk.Display.get_default ().get_default_seat ().get_keyboard ();
-
             settings.changed.connect (() => {
-                update_visibility ();
-            });
-
-            device.changed.connect (() => {
-                update_visibility ();
+                update_visibility.begin ();
             });
 
             var gesture_click = new Gtk.GestureClick () {
@@ -100,7 +104,7 @@ public class Keyboard.Indicator : Wingpanel.Indicator {
 
             popover_widget = new Keyboard.Widgets.PopoverWidget (server_type);
             popover_widget.updated.connect (() => {
-                update_visibility ();
+                update_visibility.begin ();
             });
 
             popover_widget.updated ();
@@ -109,12 +113,18 @@ public class Keyboard.Indicator : Wingpanel.Indicator {
         return indicator_box;
     }
 
-    private void update_visibility () {
+    private async void update_visibility () {
         layouts_icon.label = popover_widget.current_language_code[0:2];
         layouts_revealer.reveal_child = popover_widget.has_multiple_layouts () || settings.get_boolean ("always-show-layout");
 
-        numlock_revealer.reveal_child = device.get_num_lock_state () && settings.get_boolean ("numlock");
-        capslock_revealer.reveal_child = device.get_caps_lock_state () && settings.get_boolean ("capslock");
+        if (desktop_integration != null) {
+            try {
+                numlock_revealer.reveal_child = (yield desktop_integration.get_num_lock_state ()) && settings.get_boolean ("numlock");
+                capslock_revealer.reveal_child = (yield desktop_integration.get_caps_lock_state ()) && settings.get_boolean ("capslock");
+            } catch (Error e) {
+                warning ("Couldn't get toggle keys state: %s", e.message);
+            }
+        }
 
         if (numlock_revealer.reveal_child && (layouts_revealer.reveal_child || capslock_revealer.reveal_child)) {
             numlock_revealer.margin_end = 6;

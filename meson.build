@@ -46,6 +46,7 @@ endif
 shared_module(
     meson.project_name(),
     gresource,
+    'src/DesktopIntegration.vala',
     'src/Indicator.vala',
     'src/LayoutButton.vala',
     'src/PopoverWidget.vala',
@@ -53,6 +54,7 @@ shared_module(
     dependencies: [
         dependency('glib-2.0'),
         dependency('gobject-2.0'),
+        dependency('gio-2.0'),
         dependency('granite-7', version: '>= 7.6.0'),
         dependency('gtk4', version: '>= 4.20'),
         dependency('libxml-2.0'),
